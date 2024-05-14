@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <div class="wrapper">
+  <form class="card" name="form_age">
+     <div class="entete">
+      <div class="wrapper-input">
+        <span> DAY </span>
+        <input type="number" name="day" min="1" max="31" placeholder="day">
+        <div class="error hidden">Must be a Valide date</div>
+      </div>
+      
+      <div class="wrapper-input">
+        <span> MONTH </span>
+        <input type="number" name="month" min="1" max="12" placeholder="Month">
+        <div class="error hidden">Must be a Valide month</div>
+      </div>
+      <div class="wrapper-input">
+        <span> YEAR </span>
+        <input type="number" name="year" min="1" max="2024" placeholder="Year">
+        <div class="error hidden">Must be in the past</div>
+      </div>
+     </div>
+     <hr class="divider">
+     <button class="submit-btn" type="submit">
+      <img src="assets/images/icon-arrow.svg" alt="icon submit arrow" >
+     </button>
+     <div class="container-result">
+      <div class="result">
+        <span class="result-title">38</span> 
+        <span>Years</span>
+      </div>
+      <div class="result">
+        <span class="result-title">3</span> 
+        <span>month</span>
+      </div>
+      <div class="result">
+        <span class="result-title">26</span> 
+        <span>days</span>
+      </div>
+     </div>
+  </form>
+ </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel Assani</a>.
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
